@@ -9,6 +9,7 @@
       "hash": "ea92bea47058da653a5fd756a7755905895759523ef0e901b699979e56cae056"
     }
   },
+  "pre_install": "Get-ChildItem \"$dir\\inferencesh-cli-*.exe\" | Select-Object -First 1 | Move-Item -Destination \"$dir\\belt.exe\" -Force",
   "bin": "belt.exe",
   "checkver": {
     "url": "https://dist.inference.sh/cli/manifest.json",
